@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.ReportController"
+      spacing="15" alignment="CENTER"
+      prefWidth="800" prefHeight="600">
+
+    <Label text="Expense Report"
+           style="-fx-font-size:24px; -fx-font-weight:bold;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Weekly Report" onAction="#weeklyReport"/>
+        <Button text="Monthly Report" onAction="#monthlyReport"/>
+    </HBox>
+
+    <Label fx:id="incomeLabel"/>
+    <Label fx:id="expenseLabel"/>
+    <Label fx:id="netTotalLabel"/>
+
+    <TableView fx:id="summaryTable" prefHeight="300">
+        <columns>
+            <TableColumn text="Category" fx:id="colCategory"/>
+            <TableColumn text="Total Amount" fx:id="colTotal"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <Button text="View All Expenses" onAction="#viewAll"/>
+        <Button text="Back" onAction="#goBack"/>
+    </HBox>
+
+</VBox>

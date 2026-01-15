@@ -1,0 +1,9 @@
+.root {
+    -fx-background-image: url("images/bg.jpg");
+    -fx-background-size: cover;
+}
+.button {
+    -fx-background-color: linear-gradient(#00c6ff,#0072ff);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
