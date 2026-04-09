@@ -10,7 +10,7 @@ The Personal Expense Tracker System is a lightweight Java-based application desi
 4) View Reports: Generate simple summaries to understand spending patterns.
 5) Offline Usage: Fully functional without an internet connection.
 6) Data Storage: Uses MySQL database (or SQLite if you prefer) for secure local storage.
-7) 
+
 # Tech Stack
 
 1) Language: Java
